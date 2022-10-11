@@ -1,0 +1,27 @@
+
+name: Release
+
+on:
+  push:
+    tags:
+      - release.*
+
+jobs:
+  build-web:
+    strategy:
+      matrix:
+        channel: [master, stable]
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: ${{ matrix.channel }}
+      - name: Build
+        run: flutter build web --release
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with: 
+          name: ${{ matrix.os }}-${{ matrix.channel }}
+          path: ./build/web
