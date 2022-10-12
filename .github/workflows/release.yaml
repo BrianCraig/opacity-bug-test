@@ -19,7 +19,7 @@ jobs:
         with:
           channel: ${{ matrix.channel }}
       - name: Regenerate web
-        run: flutter create ./ --platforms=web
+        run: flutter create ./ --platforms=web --project-name=opacity
       - name: Pub get
         run: flutter pub get
       - name: Build
