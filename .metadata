@@ -4,8 +4,8 @@
 # This file should be version controlled.
 
 version:
-  revision: 900f540a5e87ec62cc1c17c92d3b08be060cdfa1
-  channel: master
+  revision: eb6d86ee27deecba4a83536aa20f366a6044895c
+  channel: stable
 
 project_type: app
 
@@ -13,27 +13,8 @@ project_type: app
 migration:
   platforms:
     - platform: root
-      create_revision: 900f540a5e87ec62cc1c17c92d3b08be060cdfa1
-      base_revision: 900f540a5e87ec62cc1c17c92d3b08be060cdfa1
-    - platform: android
-      create_revision: 900f540a5e87ec62cc1c17c92d3b08be060cdfa1
-      base_revision: 900f540a5e87ec62cc1c17c92d3b08be060cdfa1
-    - platform: ios
-      create_revision: 900f540a5e87ec62cc1c17c92d3b08be060cdfa1
-      base_revision: 900f540a5e87ec62cc1c17c92d3b08be060cdfa1
-    - platform: linux
-      create_revision: 900f540a5e87ec62cc1c17c92d3b08be060cdfa1
-      base_revision: 900f540a5e87ec62cc1c17c92d3b08be060cdfa1
-    - platform: macos
-      create_revision: 900f540a5e87ec62cc1c17c92d3b08be060cdfa1
-      base_revision: 900f540a5e87ec62cc1c17c92d3b08be060cdfa1
-    - platform: web
-      create_revision: 900f540a5e87ec62cc1c17c92d3b08be060cdfa1
-      base_revision: 900f540a5e87ec62cc1c17c92d3b08be060cdfa1
-    - platform: windows
-      create_revision: 900f540a5e87ec62cc1c17c92d3b08be060cdfa1
-      base_revision: 900f540a5e87ec62cc1c17c92d3b08be060cdfa1
-
+      create_revision: eb6d86ee27deecba4a83536aa20f366a6044895c
+      base_revision: eb6d86ee27deecba4a83536aa20f366a6044895c
   # User provided section
 
   # List of Local paths (relative to this file) that should be
